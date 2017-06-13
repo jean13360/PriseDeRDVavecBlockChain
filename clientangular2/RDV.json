@@ -1,0 +1,34 @@
+{
+  "contract_name": "Test",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "multiply",
+      "outputs": [
+        {
+          "name": "d",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x60606040523415600b57fe5b5b60788061001a6000396000f300606060405263ffffffff60e060020a600035041663c6888fa181146020575bfe5b3415602757fe5b60306004356042565b60408051918252519081900360200190f35b600781025b9190505600a165627a7a72305820a5eab88be257a8140d43e966e118fcf44ae722d68eb4d694077d5188e72dc0360029",
+  "networks": {
+    "1496753837498": {
+      "events": {},
+      "links": {},
+      "address": "0xa8c9aca1a9b5fd638a6aa025545e1274787f3456",
+      "updated_at": 1496753955860
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1496753955860
+}

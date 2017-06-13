@@ -1,0 +1,21 @@
+<div style="height:600px">
+<ul class="list-group">
+   <li class="list-group-item" style="text-align: right">
+      Puis-je vous aider?<md-icon>android</md-icon>
+   </li>
+   <ng-template  ngFor let-dialogue [ngForOf]="listDialogue">
+   <li class="list-group-item" *ngIf="dialogue.user">
+       <md-icon>{{dialogue.icon}}</md-icon>{{dialogue.text}}
+   </li>
+    <li class="list-group-item"  style="text-align: right" *ngIf="!dialogue.user">
+     {{dialogue.text}}  <md-icon>{{dialogue.icon}}</md-icon>
+   </li>
+   </ng-template>
+</ul>
+<md-input-container style="width: 80%;">
+  <input mdInput placeholder="Votre demande ?" [(ngModel)]="userDialogue">
+
+</md-input-container>   
+<button md-mini-fab (click)="addAction()"><md-icon>check</md-icon></button>
+<button md-mini-fab *ngIf="this.scenario === 2" (click)="refreshAction()"><md-icon>autorenew</md-icon></button>
+</div>

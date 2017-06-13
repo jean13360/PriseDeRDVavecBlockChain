@@ -1,0 +1,22 @@
+.example-card {
+  width: 200px;
+}
+
+.example-header-image {
+  background-image: url('../../assets/img/internaute.jpg');
+  background-size: cover;
+}
+.example-container {
+  width: 500px;
+}
+
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mat-card-title.card-titleRDVA {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+}
+
